@@ -64,8 +64,8 @@
 				dataType: 'jsonp',
 				success: function(data) {
 					// add gist's stylesheet & div data
-					$('<link>').attr('rel','stylesheet').attr('type','text/css')
-						.attr('href','https://gist.github.com' + data.stylesheet)
+					$('<link>').attr('rel','stylesheet').attr('type', 'text/css')
+						.attr('href', data.stylesheet)
 						.appendTo('head');
 					$gist.after(data.div);
 
